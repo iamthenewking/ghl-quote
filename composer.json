@@ -1,0 +1,40 @@
+{
+    "name": "iamthenewking/ghl-quote",
+    "description": "GoHighLevel (LeadConnector) quote-form, calendar availability, and appointment booking for Laravel.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["laravel", "gohighlevel", "leadconnector", "crm", "appointments"],
+    "homepage": "https://github.com/iamthenewking/ghl-quote",
+    "authors": [
+        {
+            "name": "Jeff Gaboni",
+            "email": "mrgabonijeff@gmail.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/iamthenewking/ghl-quote/issues",
+        "source": "https://github.com/iamthenewking/ghl-quote"
+    },
+    "require": {
+        "php": "^8.1",
+        "guzzlehttp/guzzle": "^7.5",
+        "illuminate/support": "^10.0|^11.0|^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Iamthenewking\\GhlQuote\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Iamthenewking\\GhlQuote\\GoHighLevelServiceProvider"
+            ],
+            "aliases": {
+                "GoHighLevel": "Iamthenewking\\GhlQuote\\Facades\\GoHighLevel"
+            }
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
